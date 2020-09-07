@@ -1,0 +1,326 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+*{
+    box-sizing:border-box;
+    max-width:100%;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    line-height:1.5;
+    font-family: 'Playfair Display', serif;
+    background-color:#dfd9d9;
+}
+
+.title{
+    background-color:#ffaa80;
+    padding:2%;
+}
+h1{
+    font-size:7rem;
+    font-family: 'Cabin', sans-serif;
+    color:white;
+    padding-bottom:.5%;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+nav a{
+    display:inline-block;
+    width:8%;
+    padding:.5% .8%;
+    background-color:#404040;
+    text-align:center;
+    border-radius:25px;
+}
+nav a:hover{
+    background-color:white;
+    color:#404040;
+    transition:2s;
+    border-radius:25px;
+}
+.intro{
+    display:flex;
+    justify-content: flex-start;
+    margin:2% 5%;
+}
+.intro img{
+    margin-top:4%;
+    border-radius:20%;
+    width:50%;
+    max-height:60rem;
+    border:3px solid white;
+}
+.introtxt{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    padding:10%;
+}
+h2{
+    color:#ffaa80;
+    font-family: 'Cabin', sans-serif;
+    font-size: 5.5rem;
+    margin-bottom: 5%;
+}
+.button1 {
+    background-color: #404040;
+    color:white;
+    text-decoration:none;
+    font-family: 'Cabin', sans-serif;
+    font-size:2.5rem;
+    width:25%;
+    padding:2% 0;
+    border-radius:25px;
+    border:none;
+}
+.button1:hover{
+    background-color:white;
+    color:#404040;
+    transition:2s;
+    font-weight:200;
+    border-radius:25px;
+    border:none;
+}
+.introtxt p{
+    color:white;
+    padding-top:3%;
+    text-align:left;
+    font-size:3rem;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space space-evenly;
+    margin:0% 4% 4% 4%;
+}
+.gallery img{
+    width:20%;
+    margin:2%;
+    height:40rem;
+}
+footer{
+    background-color:#ffaa80;
+    color:white;
+}
+.footertxt{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:2%;
+    font-family: 'Cabin', sans-serif;
+
+}
+h4{
+    font-size:3rem;
+    padding-bottom:1%;
+}
+.button2{
+    background-color: #404040;
+    color:white;
+    text-decoration:none;
+    font-family: 'Cabin', sans-serif;
+    font-size:2rem;
+    width:100%;
+    border-radius:2.5rem;
+    border:none;
+}
+.button2:hover{
+    background-color:white;
+    color:#404040;
+    transition:2s;
+    border:none;
+    border-radius:2.5rem;
+}
+/*Making it accessible for laptop*/
+@media (max-width: 1400px){
+    h1{
+        font-size:6rem;
+    }
+    #index{
+        width:7.5%;
+        font-size:2rem;
+    }
+    #about{
+        width:7.5%;
+        font-size:2rem;
+    }
+    #contact{
+        width:7.5%;
+        font-size:2rem;
+    }
+    #projects{
+        width:7.5%;
+        font-size:2rem;
+    }
+    .intro{
+        margin-right:none;
+        padding-right:none
+    }
+    .intro img{
+        height:50rem;
+        width:50%;
+    }
+    .intro p{
+        font-size:2.5rem;
+        line-height:1.3;
+    }
+    h2{
+        font-size:5.5rem;
+    }
+    .button1{
+        width:40%;
+    }
+    .gallery img{
+        height:30rem;
+    }
+}
+/*Making it accessible for tablet*/
+@media (max-width: 800px){
+    h1{
+        text-align:center;
+        margin-bottom:0%;
+    }
+    .links{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top:0%;
+        font-size:2.5rem;
+    }
+    #index{
+        margin-bottom:.5%;
+        width:30%;
+    }
+    #about{
+        margin-bottom:.5%;
+        width:30%;
+    }
+    #contact{
+        margin-bottom:.5%;
+        width:30%;
+    }
+    #projects{
+        width:30%;
+    }
+    .intro{
+        flex-direction:column;
+        align-items: center;
+    }
+    .intro img{
+        height:40rem;
+    }
+    .intro p{
+        font-size:2.5rem;
+        line-height:1.3;
+    }
+    h2{
+        text-align:center;
+    }
+    .button{
+        display:flex;
+        justify-content:center;
+    }
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:0% 4% 4% 4%;
+        
+    }
+    .gallery img{
+        width:45%;
+        margin:2%;
+        
+    }
+}
+/*Making it compatible with mobile*/
+@media (max-width: 500px){
+    h1{
+        text-align:center;
+        margin-bottom:0%;
+        font-size:4.5rem;
+    }
+    .links{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top:0%;
+        font-size:2.0rem;
+    }
+    #index{
+        margin-bottom:.5%;
+        width:20%;
+    }
+    #about{
+        margin-bottom:.5%;
+        width:20%;
+    }
+    #contact{
+        margin-bottom:.5%;
+        width:20%;
+    }
+    #projects{
+        width:20%;
+    }
+    .intro{
+        flex-direction:column;
+        align-items: center;
+    }
+    .intro img{
+        height:35rem;
+        width:60%;
+    }
+    .intro p{
+        font-size:2.5rem;
+    }
+    h2{
+        text-align:center;
+        font-size:5rem;
+    }
+    .button{
+        display:flex;
+        justify-content:center;
+    }
+    .button1{
+        width:40%;
+        font-size:2rem;
+    }
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:0% 4% 4% 4%;
+    }
+    .gallery img{
+        width:45%;
+        margin:2%;
+        height:25rem;
+    }
+}
